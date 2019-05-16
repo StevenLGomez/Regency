@@ -1,4 +1,5 @@
 
+-- This file is likely obsolete, was used for original transfer from MS Access to SQLite.
 
 -- Describe EXPORT
 CREATE TABLE export (
