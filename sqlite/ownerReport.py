@@ -27,7 +27,7 @@ for lot in range(68):
 
     for owner in ownerQueryResult:
         #print(owner)
-        print('%s, %s %s  \t\t %s %s %s' % (owner[4], owner[2], owner[3], owner[7], owner[5], owner[6]))
+        print('%s, %s %s  \t\t %s, %s %s' % (owner[4], owner[2], owner[3], owner[7], owner[5], owner[6]))
         print('%s \t%s %s, %s ' % (owner[8], owner[9], owner[10], owner[11]))
         if owner[16] == None:
             buyDate = '--------'

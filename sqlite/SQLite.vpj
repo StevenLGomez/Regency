@@ -1,104 +1,94 @@
 <!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
 <Project
-	Version="10.0"
-	VendorName="SlickEdit"
-	TemplateName="Python - Empty Project"
-	WorkingDir=".">
-	<Files>
-		<Folder
-			Name="Source Files"
-			Filters="*.py"
-			GUID="{937D3DD4-01E3-40A9-B7FF-E68A6AE5C97D}">
-			<F N="amountDue.py"/>
-			<F N="dbtool.py"/>
-			<F N="expenseReport.py"/>
-			<F N="exportReport.py"/>
-			<F N="feeHistory.py"/>
-			<F N="ownerReport.py"/>
-			<F N="transReport.py"/>
-		</Folder>
-		<Folder
-			Name="Other Files"
-			Filters=""
-			GUID="{3442B3B1-7BE7-4829-BE9A-EA4F3F07CAED}">
-			<F N="accessFeesExportWorksheet.sql"/>
-			<F N="category_01.sql"/>
-			<F N="dbDump.sql"/>
-			<F N="ddl.txt"/>
-			<F N="expenses.csv"/>
-			<F N="expenses_01.sql"/>
-			<F N="exportToSql.ods"/>
-			<F N="fees_01.sql"/>
-			<F N="fees_02.sql"/>
-			<F N="feesExport.sql"/>
-			<F N="lot_01.sql"/>
-			<F N="lotExport.sql"/>
-			<F N="ownerExport.sql"/>
-			<F N="ownerTable.sql"/>
-			<F N="schemaDump.sql"/>
-			<F N="scriptInventory.txt"/>
-			<F N="trans_01.sql"/>
-			<F N="worksheet.sql"/>
-		</Folder>
-	</Files>
-	<Config
-		Name="Debug"
-		DebugCallbackName="pydbgp"
-		Type="python"
-		OutputFile=""
-		AppType="python"
-		CompilerConfigName="">
-		<Menu>
-			<Target
-				Name="Execute"
-				MenuCaption="E&amp;xecute"
-				Dialog="_python_options_form Run"
-				CaptureOutputWith="ProcessBuffer"
-				SaveOption="SaveWorkspaceFiles"
-				RunFromDir="%rw"
-				Deletable="0">
-				<Exec CmdLine='"%(SLICKEDIT_PYTHON_EXE)" %(SLICKEDIT_PYTHON_EXECUTE_ARGS) "%f" %~other'/>
-			</Target>
-			<Target
-				Name="Debug"
-				MenuCaption="&amp;Debug"
-				Dialog="_python_options_form Debug"
-				CaptureOutputWith="ProcessBuffer"
-				SaveOption="SaveNone"
-				RunFromDir="%rw"
-				Deletable="0">
-				<Exec
-					CmdLine="python_debug"
-					Type="Slick-C"/>
-			</Target>
-			<Target
-				Name="Python Options"
-				MenuCaption="Python &amp;Options"
-				ShowOnMenu="HideIfNoCmdLine"
-				Deletable="0">
-				<Exec
-					CmdLine="pythonoptions"
-					Type="Slick-C"/>
-			</Target>
-		</Menu>
-		<List Name="Python Options">
-			<Item
-				Name="DefaultFile"
-				Value=""/>
-		</List>
-		<List Name="pydbgp Options">
-			<Item
-				Name="ServerHost"
-				Value="127.0.0.1"/>
-			<Item
-				Name="ServerPort"
-				Value="0"/>
-			<Item
-				Name="ListenInBackground"
-				Value="1"/>
-			<Item
-				Name="show_hidden"
-				Value="0"/>
-		</List>
-	</Config>
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="Python - Empty Project"
+    WorkingDir=".">
+    <Files>
+        <Folder
+            Name="Source Files"
+            Filters="*.py"
+            GUID="{937D3DD4-01E3-40A9-B7FF-E68A6AE5C97D}"></Folder>
+        <Folder
+            Name="Other Files"
+            Filters=""
+            GUID="{3442B3B1-7BE7-4829-BE9A-EA4F3F07CAED}">
+            <F N="category_01.sql"/>
+            <F N="dbDump.sql"/>
+            <F N="ddl.txt"/>
+            <F N="expenses.csv"/>
+            <F N="expenses_01.sql"/>
+            <F N="exportToSql.ods"/>
+            <F N="fees_01.sql"/>
+            <F N="fees_02.sql"/>
+            <F N="feesExport.sql"/>
+            <F N="lot_01.sql"/>
+            <F N="lotExport.sql"/>
+            <F N="ownerExport.sql"/>
+            <F N="ownerTable.sql"/>
+            <F N="schemaDump.sql"/>
+            <F N="trans_01.sql"/>
+            <F N="worksheet.sql"/>
+        </Folder>
+    </Files>
+    <Config
+        Name="Debug"
+        DebugCallbackName="pydbgp"
+        Type="python"
+        OutputFile=""
+        AppType="python"
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                Dialog="_python_options_form Run"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw"
+                Deletable="0">
+                <Exec CmdLine='"%(SLICKEDIT_PYTHON_EXE)" %(SLICKEDIT_PYTHON_EXECUTE_ARGS) "%f" %~other'/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                Dialog="_python_options_form Debug"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveNone"
+                RunFromDir="%rw"
+                Deletable="0">
+                <Exec
+                    CmdLine="python_debug"
+                    Type="Slick-C"/>
+            </Target>
+            <Target
+                Name="Python Options"
+                MenuCaption="Python &amp;Options"
+                ShowOnMenu="HideIfNoCmdLine"
+                Deletable="0">
+                <Exec
+                    CmdLine="pythonoptions"
+                    Type="Slick-C"/>
+            </Target>
+        </Menu>
+        <List Name="Python Options">
+            <Item
+                Name="DefaultFile"
+                Value=""/>
+        </List>
+        <List Name="pydbgp Options">
+            <Item
+                Name="ServerHost"
+                Value="127.0.0.1"/>
+            <Item
+                Name="ServerPort"
+                Value="0"/>
+            <Item
+                Name="ListenInBackground"
+                Value="1"/>
+            <Item
+                Name="show_hidden"
+                Value="0"/>
+        </List>
+    </Config>
 </Project>
