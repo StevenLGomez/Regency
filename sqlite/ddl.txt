@@ -1,0 +1,47 @@
+
+-- Use ownerTable.sql instead of this
+CREATE TABLE owner (
+    id INTEGER NOT NULL,
+    first TEXT,
+    mi TEXT,
+    last TEXT,
+    first_2 TEXT,
+    mi_2 TEXT,
+    last_2 TEXT,
+    address TEXT,
+    city TEXT,
+    state TEXT,
+    zip TEXT,
+    phone TEXT,
+    email TEXT,
+    phone_2 TEXT,
+    email_2 TEXT,
+    PRIMARY KEY(id),
+    UNIQUE(first, mi, last)
+);
+
+CREATE TABLE lot (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    address TEXT,
+--    city TEXT,  -- These three are constants, no need to duplicate here
+--    st TEXT,
+--    zip TEXT,
+    closing_date INTEGER,
+    note TEXT,
+    fk_curr_owner INTEGER,
+    fk_prev_owner INTEGER --,
+--    FOREIGN KEY(fk_curr_owner) REFERENCES owner(id)
+--    FOREIGN KEY(fk_prev_owner) REFERENCES owner(id)
+);
+
+CREATE TABLE fees (
+    id INTEGER NOT NULL,
+    date DATE,
+    ck_no INTEGER NOT NULL,
+    amount REAL,                     -- SQLITE floating point
+    fk_lot_id INTEGER NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(fk_lot_id) REFERENCES lot(id)
+);
+
+
