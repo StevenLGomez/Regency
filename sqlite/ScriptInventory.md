@@ -7,25 +7,25 @@ Active Scripts
 
 **amountDue.py**
 
+   Creates CSV formatted list to be used for mail merge import.
    SELECT * FROM owner_mailing_export_v
    Last First OAddr OCity OST OZip Addr City St Zip Phone Email BuyDate AmountDue
 
 **expenseReport.py**
 
-   Outputs CSV of expense category totals for years 2004 - 2014
+   Outputs CSV of expense category totals
 
-**feeHistory.py**
+**PaymentHistoryLetter.py**
 
-   Similar to exportReport.py, but uses fee table from sqlite DB.
+   Creates letters for each lot disclosing history of fee payments for review by homeowners.
 
 **ownerReport.py**
 
-   TBD
+   Creates owner history chronology by lot #
 
-**transReport.py**
+**PaymentHistory.py**
 
-   Outputs totals of all entered transactions, sorted by date.
-   Also, incomplete attempt at listing delinquent accounts.
+   Similar to PaymentHistoryLetter.py, except does not format into page per lot for printing.
 
 Deprecated Scripts 
 ------------------
