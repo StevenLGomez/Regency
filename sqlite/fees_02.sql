@@ -1244,4 +1244,10 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190211, 82622, 40, 42, 105, 'Main Street Renewal, Acct 1177010');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 105) WHERE id = 105;
 
+-- 20190607  
+INSERT INTO trans (date, is_reconciled, type) VALUES (20190607, 0, 1); -- Transaction 106
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190215,  168,  40, 29, 106, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190426, 430003531, 40, 43, 106, 'US Title File # 2043019-02519');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 106) WHERE id = 106;
+
 
