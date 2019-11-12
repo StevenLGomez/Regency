@@ -1244,10 +1244,23 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190211, 82622, 40, 42, 105, 'Main Street Renewal, Acct 1177010');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 105) WHERE id = 105;
 
--- 20190607  
+-- 20190607 Transaction 106 entered directly using SQLite DB Browser (Completely)
 INSERT INTO trans (date, is_reconciled, type) VALUES (20190607, 0, 1); -- Transaction 106
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190215,  168,  40, 29, 106, '');
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190426, 430003531, 40, 43, 106, 'US Title File # 2043019-02519');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 106) WHERE id = 106;
+
+-- 20190710 Transaction 107 created in SQL DB Browser, with three associated deposits
+--          Transaction created in DB Browser
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190612, 592335, 40, 30, 107, 'Investors Title File 638794');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190613, 573615, 40, 31, 107, 'Republic Title Order # 1902052');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190620, 11954,  40, 42, 107, 'Main Street Renewal LLC, Austin TX. P1672338');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 107) WHERE id = 107;
+
+-- 20190903 Transaction 108 
+INSERT INTO trans (date, is_reconciled, type) VALUES (20190903, 0, 1); -- Transaction 108
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190606, 2459, 40, 42, 108, 'Missouri Escrow Account VARDEZE2-MO-MAIN');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190815, 061428, 120, 58, 108, 'True Title Company, LLC File # AR190324');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 108) WHERE id = 108;
 
 
