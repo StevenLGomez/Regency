@@ -5,7 +5,7 @@ db = sqlite3.connect('regencyEstates.sqlite')
 
 cursor = db.cursor()
 
-TotalCharges = 740 # This value needs to be adjusted up for each year since 2000
+TotalCharges = 860 # This value needs to be adjusted up for each year since 2000
 
 for lot in range(68) :
 # for lot in range(5) :
