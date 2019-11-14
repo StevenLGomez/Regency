@@ -6,7 +6,7 @@ cursor = db.cursor()
 
 # *************************************************************************
 # Update the following values to reflect current values
-totalDue = 860
+TotalCharges = 860
 currentFeeAmount = 40
 # *************************************************************************
 
@@ -35,11 +35,11 @@ for row in viewResults:
     amountPaid = row[12]
     amountDue = 0
 
-    #if amountPaid >= totalDue:
+    #if amountPaid >= TotalCharges:
     #    amountDue = currentFeeAmount
     #else:
-    #    amountDue = (totalDue + currentFeeAmount) - amountPaid
-    amountDue = totalDue - amountPaid
+    #    amountDue = (TotalCharges + currentFeeAmount) - amountPaid
+    amountDue = TotalCharges - amountPaid
 
     print('%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %d' % (row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[12], amountDue))
 

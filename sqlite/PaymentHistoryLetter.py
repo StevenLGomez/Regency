@@ -5,7 +5,7 @@ db = sqlite3.connect('regencyEstates.sqlite')
 
 cursor = db.cursor()
 
-expectedTotal = 740 # This value needs to be adjusted up for each year since 2000
+TotalCharges = 740 # This value needs to be adjusted up for each year since 2000
 
 for lot in range(68) :
 # for lot in range(5) :
@@ -56,12 +56,12 @@ for lot in range(68) :
     sumOfPayments = cursor.fetchone()
 
     print('')
-    if sumOfPayments[0] < expectedTotal:
-        print('As of December 31, 2016, lot %2d is DELINQUENT by $%.2f.\n' % (lot + 1, expectedTotal - sumOfPayments[0]))
+    if sumOfPayments[0] < TotalCharges:
+        print('As of December 31, 2016, lot %2d is DELINQUENT by $%.2f.\n' % (lot + 1, TotalCharges - sumOfPayments[0]))
     	print('')
 
-    elif sumOfPayments[0] > expectedTotal:
-        print('Lot %2d has a credit due of: $%.2f.' % (lot + 1, sumOfPayments[0] - expectedTotal))
+    elif sumOfPayments[0] > TotalCharges:
+        print('Lot %2d has a credit due of: $%.2f.' % (lot + 1, sumOfPayments[0] - TotalCharges))
     	print('This amount will be deducted from next year\'s payment')
     	print('')
 
