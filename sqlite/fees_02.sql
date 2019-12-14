@@ -1263,4 +1263,49 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20190815, 061428, 120, 58, 108, 'True Title Company, LLC File # AR190324');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 108) WHERE id = 108;
 
+-- 201901214
+INSERT INTO trans (date, is_reconciled, type) VALUES (20191214, 0, 1); -- Transaction 109
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191130,  5670,  40,  1, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191122,  1829,  40,  9, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191127,  4145,  40, 10, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191130,  2871,  40, 12, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191127,  8702,  40, 13, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191122,   355,  80, 15, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191124,  3038,  40, 16, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191120,  4543,  40, 17, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191202,  8173,  40, 18, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191128,  5381,  40, 20, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191127,   759,  40, 22, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191124,  2131,  40, 23, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191125,  2390,  40, 27, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191205,  1570,  40, 28, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191124,   144,  40, 32, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191117,  5713,  40, 35, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191125,  1041,  40, 36, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191122,  2354,  40, 37, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191120,  5009,  40, 38, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191126,  5056,  40, 39, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191122,  3301,  40, 44, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191124,  5070,  40, 45, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191129,  887065,80, 46, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191120,  1204,  40, 47, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191121,  2908,  40, 49, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191121,  8002,  80, 50, 109,  'Postal Money Order');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191201,   379,  40, 52, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191207,  3098,  40, 53, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191129,   221,  40, 55, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191120,  1272,  40, 56, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191129, 10109,  40, 59, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191125,  1095,  40, 60, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191122,  5050,  40, 61, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191120,  6665,  40, 62, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191201,  1103,  40, 64, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191127,  8595,  40, 66, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191202,  995732,40, 67, 109,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191120,   196,  40, 68, 109,  '');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 109) WHERE id = 109;
+
+
+
 
