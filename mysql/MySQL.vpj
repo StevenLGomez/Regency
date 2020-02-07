@@ -3,7 +3,8 @@
     Version="10.0"
     VendorName="SlickEdit"
     TemplateName="Python - Empty Project"
-    WorkingDir=".">
+    WorkingDir="."
+    VCSProject="Git:">
     <Files>
         <Folder
             Name="Other Files"
