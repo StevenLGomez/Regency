@@ -27,6 +27,7 @@ cursor = db.cursor()
 # 17 sell_date    <<-- will not be carried forward
 # 18 is_current
 
+# Determine the number of entries (rows) in the owner table
 cursor.execute("SELECT COUNT(*) FROM owner;")
 entries = cursor.fetchone()
 
