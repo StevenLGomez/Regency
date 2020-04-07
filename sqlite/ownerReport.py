@@ -14,7 +14,7 @@ cursor = db.cursor()
 # Enumerations for owner table columns (19 columns in original sqlite database)
 #
                 #  0 id
-                #  1 lot
+FK_LOT_ID = 1   #  1 fk_lot_id
                 #  2 first
                 #  3 mi
                 #  4 last
@@ -56,6 +56,7 @@ for entry in range(records[0]):
 
     row = cursor.fetchone()
 
+#    FK_LOT_ID = 1   #  1 fk_lot_id
 #    PHONE = 12      # 12 phone
 #    EMAIL = 13      # 13 email
 #    PHONE_2 = 14    # 14 phone_2
@@ -84,7 +85,7 @@ for entry in range(records[0]):
         Email_2 = row[EMAIL_2]
 
     if row[BUY_DATE] == None:
-        BuyDate = ''
+        BuyDate = '19900101'
     else:
         BuyDate = row[BUY_DATE]
 
@@ -97,16 +98,15 @@ for entry in range(records[0]):
     if record >= records[0]:
         EndChar = ';'
 
-    print("(%s, '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, %s )%s" 
-        % (row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], Phone, Email, Phone_2, Email_2,  BuyDate, IsCurrent, EndChar))
-#       % (row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13], row[14], row[15],  row[16], row[18], EndChar))
-
+    # Increment the record counter for the next pass
     record = record + 1
 
-#print('')
-#print('-- ****************************************************************')
-#print('-- ********************* End of report ****************************')
-#print('-- ****************************************************************')
+    # Skip rows for lot IDs that are out of range (previously used for Title Companies)
+    if row[FK_LOT_ID] > 68:
+        continue
+
+    print("(%s, '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %s, %s )%s" 
+        % (row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11], Phone, Email, Phone_2, Email_2,  BuyDate, IsCurrent, EndChar))
 
 db.close()
 
