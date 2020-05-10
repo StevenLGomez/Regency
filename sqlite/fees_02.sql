@@ -1322,3 +1322,15 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 110) WHERE id = 110;
 
+-- IMPORT PENDING Below
+-- 20200204 Transaction 111
+INSERT INTO trans (date, is_reconciled, type) VALUES (20200104, 0, 1); -- Transaction 111
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20200120,  1003,  40,  3, 111,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20200120,  2570,  40, 19, 111,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191219,   182,  40, 29, 111,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20191215,  9762,  40, 40, 111,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20200112,  2545,  40, 48, 111,  '');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 111) WHERE id = 111;
+
+
