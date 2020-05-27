@@ -278,13 +278,17 @@ INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170830
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171010, 1258, 'Darla Yoakum', 200, 'July & August mowing', 2);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171016, 1259, 'Darla Yoakum', 200, 'Sept & Oct mowing', 2);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171204, 1260, 'Darla Yoakum', 100, 'November mowing', 2);
-INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161119, 1262, 'Postmaster', 34.30, 'Postage Stamps', 5);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171210, 1261, 'Void', 0, 'Voided Check', 9);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171222, 1262, 'Postmaster', 34.30, 'Postage Stamps', 5);
 
-
-
-
-
-
+INSERT INTO expense(date, payee, amount, note, fk_cat_id) VALUES(20180208, 'Bank charge', 19.99, 'New Checks', 7);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20180227, 1263, 'Postmaster', 140, 'PO Box renewal fee', 5);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20180406, 1264, 'State Farm', 1232, 'Liability Insurance', 4);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20180608, 1265, 'Darla Yoakum', 200, 'March & April Basin mowing', 2);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20180609, 1266, 'Darla Yoakum', 200, 'May & June Basin mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20180819, 1291, 'Secretary of State', 10.50, 'State Registration', 6);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20180912, 1292, 'Darla Yoakum', 200, 'July & August mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20181104, 1293, 'Schnucks', 31.50, 'Postage Stamps', 5);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20181104, 1294, 'OfficeMax', 43.82, 'Office Supplies', 9);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20181124, 1295, 'Darla Yoakum', 200, 'Sept & Oct mowing', 2);
 
