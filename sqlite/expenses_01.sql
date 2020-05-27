@@ -258,7 +258,7 @@ INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20160418
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20160513, 1261, 'Darla Yoakum', 100, 'April Basin mowing', 2);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20160711, 1244, 'Darla Yoakum', 100, 'May Basin mowing', 2);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20160827, 1245, 'Darla Yoakum', 200, 'June & July Basin mowing', 2);
-INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161013, 1246, 'Secretary of State', 15.50, 'State fees', 6);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161013, 1246, 'Secretary of State', 15.50, 'State Registration', 6);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161014, 1247, 'Darla Yoakum', 200, 'August & September Basin mowing', 2);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161118, 1248, 'Darla Yoakum', 100, 'October Basin mowing', 2);
 
@@ -266,6 +266,22 @@ INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161119
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161119, 1250, 'Office Depot', 9.33, 'Fee letter printing', 9);
 
 --INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20100810, 1250, 'Void', 0, 'OfficeMax denied check', 9);
+
+INSERT INTO expense(date, payee, amount, note, fk_cat_id) VALUES(20170105, 'Bank charge', 45.04, 'Signature Stamp (for PNC account)', 7);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170105, 1251, 'Postmaster', 132, 'PO Box renewal fee', 5);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170406, 1252, 'State Farm', 1090, 'Liability Insurance', 4);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170420, 1253, 'Darla Yoakum', 100, 'March mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170624, 1254, 'Darla Yoakum', 200, 'April & May mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170804, 1255, 'Darla Yoakum', 100, 'June mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170830, 1256, 'Secretary of State', 20, 'State Registration', 6);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20170830, 1257, 'Secretary of State', 16.25, 'State Registration', 6);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171010, 1258, 'Darla Yoakum', 200, 'July & August mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171016, 1259, 'Darla Yoakum', 200, 'Sept & Oct mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20171204, 1260, 'Darla Yoakum', 100, 'November mowing', 2);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20161119, 1262, 'Postmaster', 34.30, 'Postage Stamps', 5);
+
+
+
 
 
 
