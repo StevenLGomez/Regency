@@ -301,3 +301,8 @@ INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20191026
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20191031, 1273, 'Secretary of State', 15.50, 'State Registration', 6);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20191129, 1274, 'OfficeMax', 23.00, 'Printing, supplies', 9);
 INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20191219, 1275, 'Darla Yoakum', 200, 'Oct & Nov Basin mowing', 2);
+
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20200221, 1276, 'State Farm', 1316, 'Liability Insurance', 4);
+INSERT INTO expense(date, ck_no, payee, amount, note, fk_cat_id) VALUES(20200429, 1277, 'Postmaster', 168, 'PO Box renewal fee', 5);
+-- End 20200526
+
