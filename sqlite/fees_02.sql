@@ -1339,6 +1339,11 @@ UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 112)
 
 -- 20200501 Transaction 113
 INSERT INTO trans (date, is_reconciled, type) VALUES (20200501, 0, 1); -- Transaction 113
-INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(202000220  1821,  40,   7, 113,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(202000220,  1821,  40,   7, 113,  '');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 113) WHERE id = 113;
+
+-- 20200610 Transaction 114
+INSERT INTO trans (date, is_reconciled, type) VALUES (20200610, 0, 1); -- Transaction 114
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(202000609,   130,  80,  41, 114,  '');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 114) WHERE id = 114;
 
