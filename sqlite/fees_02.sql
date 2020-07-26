@@ -1347,3 +1347,9 @@ INSERT INTO trans (date, is_reconciled, type) VALUES (20200610, 0, 1); -- Transa
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(202000609,   130,  80,  41, 114,  '');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 114) WHERE id = 114;
 
+-- 20200729 Transaction 115
+INSERT INTO trans (date, is_reconciled, type) VALUES (20200729, 0, 1); -- Transaction 115
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20200721,  11646,  40,  51, 115,  'Touchstone Title File: 202609, TAC: 12728030');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 115) WHERE id = 115;
+
+
