@@ -8,7 +8,7 @@ CREATE OR REPLACE TABLE lot (
 
 CREATE OR REPLACE TABLE owner (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    fk_lot_id INTEGER NOT NULL,
+    fk_lot_id INTEGER,
     first VARCHAR(60),
     mi VARCHAR(60),
     last VARCHAR(60),
