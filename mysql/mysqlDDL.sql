@@ -45,7 +45,7 @@ CREATE TABLE fees (
 );
 
 CREATE TABLE trans(   -- transaction table
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
 	tr_date DATE,
 	ck_no INTEGER, 
 	payee VARCHAR, 
@@ -53,7 +53,7 @@ CREATE TABLE trans(   -- transaction table
 	amount FLOAT,          -- Amount of transaction, SQLite floating point
 	is_reconciled INTEGER, -- Boolean
 	type INTEGER,          -- 0 undefined, 1 Deposit, 2 Debit...
-	note TEXT(605), 
+	note TEXT(605)
 	);
 
 CREATE TABLE category (
@@ -64,7 +64,7 @@ CREATE TABLE category (
 );
 
 CREATE TABLE expense(   -- expense table
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
 	pay_date DATE,
 	is_reconciled INTEGER, -- Boolean
     ck_no INTEGER,
