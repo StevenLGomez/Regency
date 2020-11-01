@@ -436,3 +436,27 @@ VALUES(68,  'Clifford','D','Gibson','Bridget','A','Roth','1409 Westin Drive','Sa
 
 UPDATE owner SET first = 'Keith', mi = 'L', last = 'Vollmer', first_2 = 'Joann', last_2 = 'Vollmer' WHERE lot = 48 AND is_current = 1; 
 
+-- 20201101 - Owner changes for 2020
+
+-- Lot # 15 1172 Monza Drive
+UPDATE owner SET is_current = 0 WHERE lot = 15 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(15,  'Jonathan','','Hibbeler','','','','1172 Monza Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20200325,1);
+
+-- Lot # 24 3278 Hyatt Court
+UPDATE owner SET is_current = 0 WHERE lot = 24 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(24,  'Andrea','','Phillips','','','','3278 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20201009,1);
+
+-- Lot # 67 3278 Hyatt Court
+UPDATE owner SET is_current = 0 WHERE lot = 24 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(67,  'Ebel','Samuel','Benitez','Osiris','I','Morales','1417 Westin Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20200807,1);
+
+-- Lot # 51 3220 Windwood Trails Drive
+UPDATE owner SET is_current = 0 WHERE lot = 51 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(51,  'Timothy','A','Petrillo','Emily','L','Petrillo','3220 Windwood Trails Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20200721,1);
+
+
+
