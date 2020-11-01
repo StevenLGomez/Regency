@@ -449,7 +449,7 @@ INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city,
 VALUES(24,  'Andrea','','Phillips','','','','3278 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20201009,1);
 
 -- Lot # 67 3278 Hyatt Court
-UPDATE owner SET is_current = 0 WHERE lot = 24 AND is_current = 1;
+UPDATE owner SET is_current = 0 WHERE lot = 67 AND is_current = 1;
 INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
 VALUES(67,  'Ebel','Samuel','Benitez','Osiris','I','Morales','1417 Westin Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20200807,1);
 
