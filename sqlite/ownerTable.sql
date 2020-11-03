@@ -458,5 +458,6 @@ UPDATE owner SET is_current = 0 WHERE lot = 51 AND is_current = 1;
 INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
 VALUES(51,  'Timothy','A','Petrillo','Emily','L','Petrillo','3220 Windwood Trails Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20200721,1);
 
-
-
+-- 20201103 Owner review prior to creating fee letters
+UPDATE owner SET address = '3275 Hyatt Court', city = 'Saint Charles', zip = '63303' WHERE lot = 58 AND is_current = 1;
+UPDATE owner SET first = 'Samuel', mi = 'Rodriguez', last = 'Benitez Ebel' WHERE lot = 67 AND is_current = 1;

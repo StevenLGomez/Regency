@@ -1357,4 +1357,9 @@ INSERT INTO trans (date, is_reconciled, type) VALUES (20200810, 0, 1); -- Transa
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20200730,  78438,  40,  67, 116,  'Investors Title File: 670307');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 116) WHERE id = 116;
 
+-- 20201105 Transaction 117
+INSERT INTO trans (date, is_reconciled, type) VALUES (20201102, 0, 1); -- Transaction 117
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20201009,  94804,  120,  24, 117,  'Investors Title File: 680147');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 117) WHERE id = 117;
+
 

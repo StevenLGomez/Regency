@@ -57,7 +57,7 @@ for lot in range(68) :
 
     print('')
     if sumOfPayments[0] < TotalCharges:
-        print('As of December 31, 2016, lot %2d is DELINQUENT by $%.2f.\n' % (lot + 1, TotalCharges - sumOfPayments[0]))
+        print('Lot %2d is currently DELINQUENT by $%.2f.\n' % (lot + 1, TotalCharges - sumOfPayments[0]))
     	print('')
 
     elif sumOfPayments[0] > TotalCharges:
@@ -66,7 +66,7 @@ for lot in range(68) :
     	print('')
 
     else:
-        print('Our records indicate you are in good standing through 2016.')
+        print('Our records indicate you are in good standing through 2019.')
         print('Thank you for keeping up your payments.')
 
     # print('Total of all payments (including Y2K base adjustment): $%.2f' % (sumOfPayments))
