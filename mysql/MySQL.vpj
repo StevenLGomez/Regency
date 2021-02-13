@@ -14,6 +14,7 @@
             Name="Source Files"
             Filters="*.py"
             GUID="{44BBE3F1-2E68-40BE-9CDF-148D165D12B8}">
+            <F N="FeeDML.sql"/>
             <F N="LotDML.sql"/>
             <F N="mysqlDDL.sql"/>
             <F N="OwnerDML.sql"/>
