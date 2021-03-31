@@ -1443,6 +1443,16 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20201
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 122)  WHERE id = 122; 
 
+-- 2021-03-31 Deposit 123
+INSERT INTO trans (date, is_reconciled, type) VALUES (20210331, 0, 1); -- Deposit 123
+
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210219,  1946,  240,   2, 123,   '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210219,  410006014,   40,  21, 123,   'US Title File# 2041021-01227');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210310,  116490,   40,  42, 123,   'Main Street Renewal LLC, Vendor# v0009294');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210302,  123898,   40,  60, 123,   'Investors Title, File# 692085');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 123)  WHERE id = 123; 
+
 
 
 
