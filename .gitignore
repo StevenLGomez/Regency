@@ -2,3 +2,7 @@
 *.vpwhist*
 *.vtg
 
+# Working files when creating Fee Letters
+*.csv
+*.ods
+
