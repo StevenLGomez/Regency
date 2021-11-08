@@ -1453,6 +1453,17 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 123)  WHERE id = 123; 
 
+-- 20210506 Deposit 124
+INSERT INTO trans (date, is_reconciled, type) VALUES (20210506, 0, 1); -- Deposit 124
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210420,  430009304,   40,  28, 124,   'US Title File# 2043021-03358');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 124)  WHERE id = 124; 
+
+-- 20211018 Deposit 125
+INSERT INTO trans (date, is_reconciled, type) VALUES (20211018, 0, 1); -- Deposit 125
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210823,  173980,   80,  6, 125,   'Title Partners Agency, LLC 21-292361-CR/54');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20210909,  22906,   40,  39, 125,   'Synergy Title SYN2116592');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 125)  WHERE id = 125; 
+
 
 
 
