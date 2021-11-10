@@ -462,6 +462,11 @@ VALUES(51,  'Timothy','A','Petrillo','Emily','L','Petrillo','3220 Windwood Trail
 UPDATE owner SET address = '3275 Hyatt Court', city = 'Saint Charles', zip = '63303' WHERE lot = 58 AND is_current = 1;
 UPDATE owner SET first = 'Samuel', mi = 'Rodriguez', last = 'Benitez Ebel' WHERE lot = 67 AND is_current = 1;
 
+-- Lot # 40 3253 Hyatt Court 
+UPDATE owner SET is_current = 0 WHERE lot = 40 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(40,  'Thiara','Jasbir','Singh','','','','3253 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20201229,1);
+
 -- 20211101 - Owner changes for 2021
 
 -- Lot 21 3284 Hyatt Court
