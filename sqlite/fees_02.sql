@@ -1490,6 +1490,41 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES(20211
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 126)  WHERE id = 126; 
 
 
+-- 2021-12-20 Deposit 127
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (127, '20211220', 0, 1); -- Deposit 127
+
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211204',   790,   40,   8, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211201',  4559,   40,  10, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211129',  9246,   40,  13, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211206',  2807,   40,  19, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211203',  5769,   40,  20, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211201',  2162,   40,  23, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211127',   102,   40,  30, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211123',  2526,   40,  37, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211122',  5270,   40,  40, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211202',  5213,   40,  45, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211123',  3057,   40,  49, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211127',   433,   40,  55, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211123',  3040,   80,  63, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211122',  1252,   40,  64, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211210',  8926,   40,  66, 127, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211201',  176146, 40,  33, 127, '');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 127)  WHERE id = 127; 
+
+-- 2022-01-18 Deposit 128
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (128, '20220118', 0, 1); -- Deposit 128
+
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211224',  2019,   40,   7, 128, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211227',   101,   40,   2, 128, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211227',  5730,   40,   4, 128, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211215',   107,   40,  58, 128, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211203',  5233,   40,  61, 128, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20211215',  9064,   40,  42, 128, '');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 128)  WHERE id = 128; 
+
+
 
 
 
