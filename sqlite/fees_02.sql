@@ -1566,6 +1566,13 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('2022
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 133)  WHERE id = 133; 
 
+-- Additions & Correction for deposit 133
+UPDATE trans SET date = 20220831 WHERE id = 133; -- Correct deposit date
+
+UPDATE fees SET NOTE = "Pinnacle Title PTA-14360-22/68" WHERE date = 20220608 AND fk_lot_id = 9;
+UPDATE fees SET NOTE = "Alliance Title 15514ATG" WHERE date = 20220729 AND fk_lot_id = 34;
+UPDATE fees SET NOTE = "Vision Title BL-22-24586W" WHERE date = 20220802 AND fk_lot_id = 58;
+
 
 
 
