@@ -503,5 +503,39 @@ UPDATE owner SET first = 'Alto Asset Company 4 LLC' WHERE lot = 42 AND is_curren
 UPDATE owner SET first_2 = 'Courtney', last_2 = 'Suntrup', city = 'Saint Peters' WHERE lot = 58 AND is_current = 1;
 
 
+-- 20221016 - Owner changes for 2022
+
+-- Lot 27 3272 Hyatt Court
+UPDATE owner SET is_current = 0 WHERE lot = 27 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(27,  'Nathaniel','','Orlando','','','','3272 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220406,1);
+
+-- Lot 54 3232 Windwood Trails
+UPDATE owner SET is_current = 0 WHERE lot = 54 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(54,  'Shannon','R','Weaver','','','','3232 Windwood Trails','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220404,1);
+
+-- Lot 9 1169 Monza Drive
+UPDATE owner SET is_current = 0 WHERE lot = 9 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(9,  'Cole','Andrew','Metcalfe','Lindsay','','Pallarito','1169 Monza Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220608,1);
+
+-- Lot 34 3258 Hyatt Court
+UPDATE owner SET is_current = 0 WHERE lot = 34 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(34,  'Rex','','Anderson','Rachel','','Anderson','3258 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220801,1);
+
+-- Lot 58 3275 Hyatt Court
+UPDATE owner SET is_current = 0 WHERE lot = 58 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(58,  'Jamie','M','Purnell','Tyler','L','Purnell','3275 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220802,1);
+
+-- Lot 62 6 Ritz Court
+UPDATE owner SET is_current = 0 WHERE lot = 62 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(62,  'Robert','A','Gardiner','Lindsay','','Gardiner','6 Ritz Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220926,1);
+
+
+
 
 
