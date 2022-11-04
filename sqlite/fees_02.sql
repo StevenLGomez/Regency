@@ -1573,6 +1573,13 @@ UPDATE fees SET NOTE = "Pinnacle Title PTA-14360-22/68" WHERE date = 20220608 AN
 UPDATE fees SET NOTE = "Alliance Title 15514ATG" WHERE date = 20220729 AND fk_lot_id = 34;
 UPDATE fees SET NOTE = "Vision Title BL-22-24586W" WHERE date = 20220802 AND fk_lot_id = 58;
 
+-- 2022-10-05 Deposit 134
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (134, '20221005', 0, 1); -- Deposit 134
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221025', 560008707,  40,   3, 134, 'US Title');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20220511',    219440,  40,  62, 134, 'Investors Title');
 
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 134)  WHERE id = 134; 
 
+UPDATE fees SET date = "29220926", note = "Investors Title File 738496" WHERE fk_trans_id = 134 AND fk_lot_id = 62; -- Corrections for above
+UPDATE fees SET note = "US Title File 2056022-11433" WHERE fk_trans_id = 134 AND fk_lot_id = 3; 
 

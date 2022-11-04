@@ -535,6 +535,14 @@ UPDATE owner SET is_current = 0 WHERE lot = 62 AND is_current = 1;
 INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
 VALUES(62,  'Robert','A','Gardiner','Lindsay','','Gardiner','6 Ritz Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220926,1);
 
+-- Lot 3 3249 Windwood Trails 
+UPDATE owner SET is_current = 0 WHERE lot = 3 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(62,  'Shane','','Blackledge','Amber','','Blackledge','3249 Windwood Trails','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20221025,1);
+
+-- Correction to above, had incorrect lot number
+UPDATE owner SET lot = 3 WHERE id = 166;
+
 
 
 
