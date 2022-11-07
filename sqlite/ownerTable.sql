@@ -549,6 +549,26 @@ UPDATE owner SET is_current = 0 WHERE lot = 33 AND is_current = 1;
 INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
 VALUES(33,  'Pak','','Chang','','','','3260 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20211201,1);
 
+-- 20221106 Corrections & updates 
+UPDATE owner SET first = "Chang", last = "Pak" WHERE lot = 33 AND is_current = 1;
+
+UPDATE owner SET first = "Vivian", last = "Hawkins", first_2 = "Gary", last_2 = "Hawkins" WHERE lot = 50 AND is_current = 1;
+
+UPDATE owner SET is_current = 0 WHERE lot = 55 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(55,  'David','','Whitlock','Jessica','','Whitlock','3287 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20220215,1);
+
+UPDATE owner SET first = "Thomas", last = "Keppler", first_2 = "", last_2 = "" WHERE lot = 55 AND is_current = 1;
+
+UPDATE owner SET mi = "Benitez Ebel", last = "Rodriguez" WHERE lot = 67 AND is_current = 1;
+
+UPDATE owner SET first = "Jasbir", mi = "Singh", last = "Thiara" WHERE lot = 40 AND is_current = 1;
+
+
+
+
+
+
 
 
 
