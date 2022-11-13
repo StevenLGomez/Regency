@@ -564,6 +564,18 @@ UPDATE owner SET mi = "Benitez Ebel", last = "Rodriguez" WHERE lot = 67 AND is_c
 
 UPDATE owner SET first = "Jasbir", mi = "Singh", last = "Thiara" WHERE lot = 40 AND is_current = 1;
 
+-- 2021 Owner email updates from Fee Slips
+UPDATE owner SET email = "mallory.vorce@gmail.com" WHERE lot = 39 AND last = "Vorce";
+UPDATE owner SET email = "bobmichele122@yahoo.com.au" WHERE lot = 44 AND last = "Angelo";
+UPDATE owner SET email = "margbridgett@sbcglobal.net" WHERE lot = 59 AND last = "Bridgett";
+UPDATE owner SET email = "rugerariel@charter.net" WHERE lot = 10 AND last = "Martin";
+UPDATE owner SET email = "" WHERE lot = 10 AND last = "Knarr";
+UPDATE owner SET email = "ashtonelizabeth77@gmail.com" WHERE lot = 23 AND last = "Sullivan";
+UPDATE owner SET email = "rachelhunt710@gmail.com" WHERE lot = 30 AND last = "Hunt";
+UPDATE owner SET first_2 = "Benjamin", mi_2 = "Joseph", last_2 = "Mizera" WHERE lot = 30 AND last = "Hunt";
+UPDATE owner SET email = "jasbir.thiara@yahoo.com" WHERE lot = 40 AND last = "Thiara";
+UPDATE owner SET email = "mrdavidwhitlock@gmail.com" WHERE lot = 55 AND last = "Whitlock";
+
 
 
 
