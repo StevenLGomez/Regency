@@ -1580,6 +1580,7 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('2022
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 134)  WHERE id = 134; 
 
+HEY - Fix this date -----v
 UPDATE fees SET date = "29220926", note = "Investors Title File 738496" WHERE fk_trans_id = 134 AND fk_lot_id = 62; -- Corrections for above
 UPDATE fees SET note = "US Title File 2056022-11433" WHERE fk_trans_id = 134 AND fk_lot_id = 3; 
 
