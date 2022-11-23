@@ -1587,3 +1587,25 @@ UPDATE fees SET note = "US Title File 2056022-11433" WHERE fk_trans_id = 134 AND
 -- Correction for fee entry on 20211201
 UPDATE fees SET note = "Investors Title File 716041" WHERE fk_trans_id = 127 AND fk_lot_id = 33; 
 
+-- ************************************************************************************************
+-- *****  Start of changes for 2022 Payments ******************************************************
+-- ************************************************************************************************
+
+UPDATE fees SET DATE = "20220926" WHERE fk_trans_id = 134 AND fk_lot_id = 62;  -- Date correction, See line 1584 above
+
+-- 2022-11-25 Deposit 135
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (135, '20221125', 0, 1); -- Deposit 135
+
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221118',   3424,  40, 13, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221117',   4717,  40, 17, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221117',   8388,  40, 18, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221117',    104,  40, 22, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221117',    106,  40, 30, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221122',   5829,  40, 35, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221117',   3623,  40, 44, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221118',   3129,  40, 49, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221117',    426,  80, 52, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221122',   3428,  40, 53, 135, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221118',   5321,  40, 61, 135, '');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 135)  WHERE id = 135; 
