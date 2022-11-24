@@ -576,8 +576,11 @@ UPDATE owner SET first_2 = "Benjamin", mi_2 = "Joseph", last_2 = "Mizera" WHERE 
 UPDATE owner SET email = "jasbir.thiara@yahoo.com" WHERE lot = 40 AND last = "Thiara";
 UPDATE owner SET email = "mrdavidwhitlock@gmail.com" WHERE lot = 55 AND last = "Whitlock";
 
+-- Update for Peer Properties LLC, change of address
+--INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, sell_date) 
+--VALUES(47,'Peer Properties LLC','','','','','','939 Bentley Park Circle','O''Fallon','MO','63368',NULL,NULL,NULL,NULL,20050609,NULL);
 
-
+UPDATE owner SET address = "1093 Arbor Grove Court", city = "Chesterfield", zip = "63005-4984" WHERE lot = 47 AND is_current = 1;
 
 
 
