@@ -1609,3 +1609,37 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('2022
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221118',   5321,  40, 61, 135, '');
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 135)  WHERE id = 135; 
+
+-- 2022-12-02 Deposit 136
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (136, '20221202', 0, 1); -- Deposit 136
+
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221121',   6180,  40,  1, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221118',   9982,  40,  6, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221122',   8233,  40, 11, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221119',   3430,  40, 12, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221120',   3160,  40, 16, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221121',   2922,  40, 19, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221125',   5916,  40, 20, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221119',   4037,  40, 21, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221125',    193,  40, 32, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221129', 22016134666,  40, 33, 136, 'Money Order');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221127',   5053,  40, 38, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221122',   1260,  40, 40, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221122', 28295749585, 40, 50, 136, 'Money Order');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221111',    759,  40, 59, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221123',    276,  40, 60, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221120',   1619,  40, 64, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221122',     23,  40, 65, 136, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221122',    219,  40, 68, 136, '');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 136)  WHERE id = 136; 
+
+
+
+
+
+
+
+
+
+
