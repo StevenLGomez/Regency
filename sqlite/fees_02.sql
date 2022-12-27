@@ -1635,7 +1635,25 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('2022
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 136)  WHERE id = 136; 
 
 
+-- 2022-12-27 Deposit 137
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (137, '20221227', 0, 1); -- Deposit 137
 
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221216',   2124,  40,  7, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221125',   4612,  40, 10, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221202',   2190,  40, 23, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221128',   1049,  40, 28, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221128',   3390,  40, 31, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221130',   2648,  40, 37, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221129',   1183,  40, 39, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221201', 223504,  40, 42, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221128',   5281,  40, 45, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221209', 887592,  80, 46, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221129',   1767,  40, 47, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221128',   1382,  40, 56, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221207',   3079,  40, 63, 137, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221130',   9052,  40, 66, 137, '');
+
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 137)  WHERE id = 137; 
 
 
 
