@@ -1655,9 +1655,16 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('2022
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 137)  WHERE id = 137; 
 
+-- START of 2023 ------------------------------------------------------------------------------------------------
+-- 2023-02-25 Deposit 138
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (138, '20230225', 0, 1); -- Deposit 138
 
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221231',   5791,  40,  4, 138, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20221218',    798,  40,  8, 138, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20230208',    547, 200, 14, 138, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20230116',    254,  40, 48, 138, '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20230124', 145061,  80, 24, 138, '');
 
-
-
-
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 138)  WHERE id = 138; 
+UPDATE fees SET note = "Integrity Title STL-72589-22/44" WHERE fk_lot_id = 24 AND fk_trans_id = 138;
 
