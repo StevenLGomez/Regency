@@ -1676,6 +1676,9 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('2022
 
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 139)  WHERE id = 139; 
 
-
+-- 2023-07-25 Deposit 140
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (140, '20230725', 0, 1); -- Deposit 140
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20230510',   6071,  80, 41, 140, '');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 140)  WHERE id = 140;
 
 
