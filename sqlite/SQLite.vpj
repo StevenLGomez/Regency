@@ -11,7 +11,7 @@
             GUID="{937D3DD4-01E3-40A9-B7FF-E68A6AE5C97D}">
             <F N="amountDue.py"/>
             <F N="expenseReport.py"/>
-            <F N="ownerReport.py"/>
+            <F N="OwnersToMysql.py"/>
             <F N="PaymentHistory.py"/>
             <F N="PaymentHistoryLetter.py"/>
             <F N="regencyEstates.sqlite"/>
