@@ -582,7 +582,21 @@ UPDATE owner SET email = "mrdavidwhitlock@gmail.com" WHERE lot = 55 AND last = "
 
 UPDATE owner SET address = "1093 Arbor Grove Court", city = "Chesterfield", zip = "63005-4984" WHERE lot = 47 AND is_current = 1;
 
+-- Lot 24 3278 Hyatt Court 
+UPDATE owner SET is_current = 0 WHERE lot = 24 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(24,  'Brandon','','Bohot','Mara','','Bohot','3278 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20221228,1);
 
+-- Add phone number for Yadkosky
+UPDATE owner SET phone = "636-293-0769" WHERE id = 91;
+
+-- Lot 65 3259 Hyatt Court 
+UPDATE owner SET is_current = 0 WHERE lot = 65 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(65,  'Matthew','J','Matyi','Jessica','','Waller','3259 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20230804,1);
+
+-- Lot 47 Peer Properties, update phone & email
+UPDATE owner SET phone = "314-657-2558", email = "Jeffpeer15@yahoo.com" WHERE id = 74;
 
 
 
