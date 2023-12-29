@@ -1,7 +1,7 @@
 
 import sqlite3
 
-yearList = [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018]
+yearList = [2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
 
 # Print a header for the CSV columns
 print('Year, mowing, maintenance, insurance, postage, state_fee, bank_charge, ret_chk_fee, supplies')
@@ -23,7 +23,7 @@ cursor = db.cursor()
 
 # TODO - Fix this to not need hard coded number
 # for year in range(yearList):
-for year in range(15):
+for year in range(20):
     # print yearList[year]
 
     # Initialize the queried values
