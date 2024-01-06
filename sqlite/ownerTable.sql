@@ -601,6 +601,10 @@ UPDATE owner SET phone = "314-657-2558", email = "Jeffpeer15@yahoo.com" WHERE id
 -- 2023-11-10 Lot # 1, Fred & Laura Colley moved to South Carolina (Now rental property)
 UPDATE owner SET address = "2234 Saint Somewhere Drive", city = "Hardeeville", state = "South Carolina", zip ="29927", phone_2 = "314-707-9944", email_2 = "colleyfli@aol.com" WHERE last = "Colley" AND lot = 1;
 
+-- 2023-12-20 Lot # 59 - 12 Ritz Court
+UPDATE owner SET is_current = 0 WHERE lot = 59 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(59,  'Timothy','','Grieb','Linda','','Grieb','12 Ritz Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20231220,1);
 
 
 
