@@ -606,5 +606,11 @@ UPDATE owner SET is_current = 0 WHERE lot = 59 AND is_current = 1;
 INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
 VALUES(59,  'Timothy','','Grieb','Linda','','Grieb','12 Ritz Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20231220,1);
 
+-- 2024-05-18 Lot # 17 - 1164 Monza Drive
+UPDATE owner SET is_current = 0 WHERE lot = 17 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(17,  'Jaime','Lee','Gilmet','Sean','Eric','Hoeh','1164 Monza Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20241523,1);
+
+
 
 
