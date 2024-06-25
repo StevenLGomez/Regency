@@ -1764,3 +1764,17 @@ INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('2023
 INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20231229',    171,  40, 68, 146,  '');
 UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 146)  WHERE id = 146;
 
+-- 2024-02-22 Deposit 147
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (147, '20240222', 0, 1); -- Deposit 147
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20240112',   1037,  40, 14, 147,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20240110',   5285,  40, 25, 147,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20231201',    516, 160, 29, 147,  '');
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20240118',   5085,  80, 51, 147,  '');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 147)  WHERE id = 147;
+
+-- 2024-06-10 Deposit 148
+INSERT INTO trans (id, date, is_reconciled, type) VALUES (148, '20240610', 0, 1); -- Deposit 148
+INSERT INTO fees(date, ck_no, amount, fk_lot_id, fk_trans_id, note) VALUES('20240523',  33593,  40, 17, 148,  'Synergy Title, File: SYN2419842');
+UPDATE trans SET amount = (SELECT SUM(amount) FROM fees WHERE fk_trans_id = 148)  WHERE id = 148;
+
+

@@ -611,6 +611,13 @@ UPDATE owner SET is_current = 0 WHERE lot = 17 AND is_current = 1;
 INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
 VALUES(17,  'Jaime','Lee','Gilmet','Sean','Eric','Hoeh','1164 Monza Drive','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20241523,1);
 
+-- 2024-06-07 Lot # 28 - 3270 Hyatt Court
+UPDATE owner SET is_current = 0 WHERE lot = 28 AND is_current = 1;
+INSERT INTO "owner" (lot, first, mi, last, first_2, mi_2, last_2, address, city, state, zip, phone, email, phone_2, email_2, buy_date, is_current) 
+VALUES(28,  'Marie-Therese','Cerre','Kish','','','','3270 Hyatt Court','Saint Peters','MO','63303',NULL,NULL,NULL,NULL,20240607,1);
+
+-- Also correct buy_date for Lot 17: change to 20240518
+UPDATE owner SET buy_date = 20240518 WHERE lot = 17 AND last = 'Gilmet';
 
 
 
