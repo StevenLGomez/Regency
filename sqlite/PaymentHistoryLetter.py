@@ -5,7 +5,7 @@ db = sqlite3.connect('regencyEstates.sqlite')
 
 cursor = db.cursor()
 
-TotalCharges = 860 # This value needs to be adjusted up for each year since 2000
+TotalCharges = 1020 # This value needs to be adjusted up for each year since 2000
 
 for lot in range(68) :
 # for lot in range(5) :
@@ -66,7 +66,7 @@ for lot in range(68) :
     	print('')
 
     else:
-        print('Our records indicate you are in good standing through 2019.')
+        print('Our records indicate you are in good standing through 2023.')
         print('Thank you for keeping up your payments.')
 
     # print('Total of all payments (including Y2K base adjustment): $%.2f' % (sumOfPayments))
