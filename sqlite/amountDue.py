@@ -6,7 +6,7 @@ cursor = db.cursor()
 
 # *************************************************************************
 # Update the following values to reflect current values
-TotalCharges = 1020
+TotalCharges = 1060
 currentFeeAmount = 40
 # *************************************************************************
 
